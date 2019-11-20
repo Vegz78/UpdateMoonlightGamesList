@@ -6,6 +6,7 @@ This script can be run directly from RetroPie in the Moonlight/Steam games list 
 What this script does is to pull available games from the desired game stream server through the "moonlight list" command, delete game entries made previously from the script, create a new the list of games in the Emulationstation Retropie and restart Emulationstation to relaod the game list.
 
 The script, specifically the "grep"-part for fetching the games list from Moonlight is loosely inspired by https://github.com/rpf16rj/moonlight_script_retropie and too many other blogs/forum posts to mention.
+
 Pardon any bugs, as I'm still noob in bash scripts.
 
 # Features
