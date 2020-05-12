@@ -26,7 +26,7 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 
 1 - Download and copy the script into your RetroPie Moonlight/Steam roms folder, typically "/home/pi/RetroPie/roms/moonlight". Make sure it's executable. <br>
     Alternatively, in same folder, run:<BR>
-    ```git clone https://github.com/Vegz78/UpdateMoonlightGamesList && sudo chmod +x _UpdateMoonlightGamesList.sh```
+    ```git clone https://github.com/Vegz78/UpdateMoonlightGamesList && sudo chmod +x ./UpdateMoonlightGamesList/_UpdateMoonlightGamesList.sh```
 
 2 - Edit _UpdateMoonlightGamesList.sh with the desired global variables correct for your setup(server IP/Hostname, roms folder path etc.)
 
