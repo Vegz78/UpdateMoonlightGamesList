@@ -12,7 +12,9 @@ Pardon any bugs, as I'm still noob in bash scripts.
 Feel free to copy, modify and use as you want. The script does what it's supposed to on my home system and won't be supported, updated or actively maintained.
 
 # Prerequisites
-- [I'm an inline-style link](17)
+- Raspberry Pi with Linux (but should work on most Linux distros, as well)
+- [Moonlight](https://moonlight-stream.org) or [Moonlight embedded](https://github.com/irtimmer/moonlight-embedded)
+- RetroPie/Emulationstation with [Steam or other games menu folders that execute .sh-scripts](#Example-of-sh-script-games-menu-in-Emulationstation)
 
 # Features
 - Automatically update the RetroPie Moonlight games list with the contents of the Moonlight list command to the desired game stream server.
@@ -20,14 +22,30 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 - Restarts EmulationStation to update the games list with new entries.
 - Game files already present and not previously created by this script are not overwritten.
 
-# Usage: 
+# Usage
 
 1 - Download and copy the script into your RetroPie Moonlight/Steam roms folder, typically "/home/pi/RetroPie/roms/moonlight". Make sure it's executable. <br>
     Alternatively, in same folder, run:<BR>
-    git clone https://github.com/Vegz78/UpdateMoonlightGamesList && sudo chmod +x _UpdateMoonlightGamesList.sh
+    ```git clone https://github.com/Vegz78/UpdateMoonlightGamesList && sudo chmod +x _UpdateMoonlightGamesList.sh```
 
 2 - Edit _UpdateMoonlightGamesList.sh with the desired global variables correct for your setup(server IP/Hostname, roms folder path etc.)
 
 3 - Start RetroPie and navigate to the Moonlight/Steam games list menu.
 
 4 - Run the _UpdateMoonlightGamesList entry.
+
+# Example of sh script games menu in Emulationstation
+Edit the file /etc/emulationstation/es_systems.cfg
+
+Add something like this:
+```
+  <system>
+    <name>Steam</name>
+    <fullname>Steam</fullname>
+    <path>/home/pi/RetroPie/roms/moonlight_Berry</path>
+    <extension>.sh .SH</extension>
+    <command>%ROM%</command>
+    <platform>steam</platform>
+    <theme>steam</theme>
+  </system>
+```
