@@ -35,7 +35,7 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 4 - Run the _UpdateMoonlightGamesList entry.
 
 # Example of sh script games menu in Emulationstation
-Edit the file /etc/emulationstation/es_systems.cfg
+Edit the file /etc/emulationstation/es_systems.cfg as loosely inspired by [TechWizTime](https://github.com/TechWizTime/moonlight-retropie).
 
 Add something like this:
 ```
