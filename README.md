@@ -12,7 +12,7 @@ Pardon any bugs, as I'm still noob in bash scripts.
 Feel free to copy, modify and use as you want. The script does what it's supposed to on my home system and won't be supported, updated or actively maintained.
 
 # Prerequisites
-- [I'm an inline-style link](https://www.google.com)
+- [I'm an inline-style link](17)
 
 # Features
 - Automatically update the RetroPie Moonlight games list with the contents of the Moonlight list command to the desired game stream server.
