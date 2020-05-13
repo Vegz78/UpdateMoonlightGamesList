@@ -9,7 +9,7 @@ The script, specifically the "grep"-part for fetching the games list from Moonli
 
 Pardon any bugs, as I'm still noob in bash scripts.
 
-Feel free to copy, modify and use as you want. The script does what it's supposed to on my home system and won't be supported, updated or actively maintained.
+Feel free to copy, modify and use as you want. The script does what it's supposed to on my home system and won't be very actively supported, updated or maintained.
 
 # Prerequisites
 - Raspberry Pi with Linux (but should work on most Linux distros, as well)
