@@ -42,7 +42,7 @@ Add something like this:
   <system>
     <name>Steam</name>
     <fullname>Steam</fullname>
-    <path>/home/pi/RetroPie/roms/moonlight_Berry</path>
+    <path>/home/pi/RetroPie/roms/moonlight</path>
     <extension>.sh .SH</extension>
     <command>%ROM%</command>
     <platform>steam</platform>
