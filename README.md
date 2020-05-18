@@ -12,7 +12,7 @@ Pardon any bugs, as I'm still noob in bash scripts.
 Feel free to copy, modify and use as you want. The script does what it's supposed to on my home system and won't be very actively supported, updated or maintained.
 
 # Prerequisites
-- Raspberry Pi with Linux (but should work on most Linux distros, as well)
+- Raspberry Pi with Rapbian/Linux (but should work on most Linux devices and distros, as well)
 - [Moonlight](https://moonlight-stream.org) or [Moonlight embedded](https://github.com/irtimmer/moonlight-embedded)
 - RetroPie/Emulationstation with [Steam or other games menu folders that execute .sh-scripts](#Example-of-sh-script-games-menu-in-Emulationstation)
 
