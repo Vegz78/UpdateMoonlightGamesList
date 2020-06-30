@@ -1,6 +1,6 @@
 # UpdateMoonlightGamesList
 A script to automatically update the RetroPie Moonlight games list with the contents of the Moonlight Embedded list command to the desired game stream server.
-
+![alt text](https://retrospill.ninja/wp-content/uploads/2020/06/retro2png_17.jpeg)
 This script can be run directly from RetroPie in the Moonlight/Steam games list menu to automatically update/sync the games list with the contents from the "moonlight list" command on a desired chosen game stream server. 
 
 What this script does is to pull available games from the desired game stream server through the "moonlight list" command, delete game entries made previously from the script, create a new the list of games in the Emulationstation Retropie and restart Emulationstation to relaod the game list.
@@ -22,17 +22,24 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 - Restarts EmulationStation to update the games list with new entries.
 - Game files already present and not previously created by this script are not overwritten.
 
-# Usage
+# Setup and usage
 
-1 - Download and copy the script into your RetroPie Moonlight/Steam roms folder, typically "/home/pi/RetroPie/roms/moonlight". Make sure it's executable. <br>
+1 - Download and copy the script into your RetroPie Moonlight/Steam roms folder, typically "/home/pi/RetroPie/roms/moonlight". Make a new ROMS folder if not already present. Make sure the script files are executable, ```sudo chmod +x *.sh```.<br>
     Alternatively, in same folder, run:<BR>
     ```git clone https://github.com/Vegz78/UpdateMoonlightGamesList && sudo chmod +x ./UpdateMoonlightGamesList/_UpdateMoonlightGamesList.sh```
+    <BR>Move the script files to the ROMS folder, e.g.: ```sudo mv *.sh /home/pi/RetroPie/roms/moonlight```
 
 2 - Edit _UpdateMoonlightGamesList.sh with the desired global variables correct for your setup(server IP/Hostname, roms folder path etc.)
 
-3 - Start RetroPie and navigate to the Moonlight/Steam games list menu.
+3 - Add the [entry from the example below](https://github.com/Vegz78/UpdateMoonlightGamesList#example-of-sh-script-games-menu-in-emulationstation) to /etc/emulationstation/es_systems.cfg.
 
-4 - Run the _UpdateMoonlightGamesList entry.
+4 - Start RetroPie and navigate to the Moonlight/Steam games list menu.
+
+5 - Run the _UpdateMoonlightGamesList entry.
+
+Here are links to more detailed instructions for [installing Moonlight Embedded on a Raspberry Pi](https://translate.google.no/translate?sl=no&tl=en&u=https%3A%2F%2Fretrospill.ninja%2F2020%2F06%2Fmoonlight-game-streaming-pa-raspberry-pi%2F%23Installasjon-Embedded) and [setting it up in RetroPie](https://translate.google.no/translate?sl=no&tl=en&u=https%3A%2F%2Fretrospill.ninja%2F2020%2F06%2Fmoonlight-game-streaming-pa-raspberry-pi%2F%23Oppsett-Embedded).
+
+ _UpdateMoonlightGamesList.sh of course also works from the command line, ```_UpdateMoonlightGamesList.sh```. You can list the games on the game streaming server, without updating the RetroPie menu entry files by running the command ```moonlight list```.
 
 # Example of sh script games menu in Emulationstation
 Edit the file /etc/emulationstation/es_systems.cfg as loosely inspired by [TechWizTime](https://github.com/TechWizTime/moonlight-retropie).
