@@ -1,11 +1,11 @@
 # UpdateMoonlightGamesList
-A script to automatically update the RetroPie Moonlight games list with the contents of the Moonlight list command to the desired game stream server.
+A script to automatically update the RetroPie Moonlight games list with the contents of the Moonlight Embedded list command to the desired game stream server.
 
 This script can be run directly from RetroPie in the Moonlight/Steam games list menu to automatically update/sync the games list with the contents from the "moonlight list" command on a desired chosen game stream server. 
 
 What this script does is to pull available games from the desired game stream server through the "moonlight list" command, delete game entries made previously from the script, create a new the list of games in the Emulationstation Retropie and restart Emulationstation to relaod the game list.
 
-The script, specifically the "grep"-part for fetching the games list from Moonlight is loosely inspired by https://github.com/rpf16rj/moonlight_script_retropie and too many other blogs/forum posts to mention.
+The script, specifically the "grep"-part for fetching the games list from Moonlight Embedded is loosely inspired by https://github.com/rpf16rj/moonlight_script_retropie and too many other blogs/forum posts to mention.
 
 Pardon any bugs, as I'm still noob in bash scripts.
 
@@ -13,12 +13,12 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 
 # Prerequisites
 - Raspberry Pi with Rapbian/Linux (but should work on most Linux devices and distros, as well)
-- [Moonlight](https://moonlight-stream.org) or [Moonlight embedded](https://github.com/irtimmer/moonlight-embedded)
+- [Moonlight embedded](https://github.com/irtimmer/moonlight-embedded)
 - RetroPie/Emulationstation with [Steam or other games menu folders that execute .sh-scripts](#Example-of-sh-script-games-menu-in-Emulationstation)
 
 # Features
-- Automatically update the RetroPie Moonlight games list with the contents of the Moonlight list command to the desired game stream server.
-- Can be run directly from the RetroPie Moonlight/Steam games list.
+- Automatically update the RetroPie Moonlight games list with the contents of the Moonlight Embedded list command to the desired game stream server.
+- The script and its resulting game config/launch files can be run directly from the RetroPie Moonlight/Steam games list.
 - Restarts EmulationStation to update the games list with new entries.
 - Game files already present and not previously created by this script are not overwritten.
 
